@@ -1,0 +1,79 @@
+<!-- div는 크게 묶어주고 span 일부분만 묵어주는용도 -> div는 block 이고 span은 인라인 이니까 -->
+<!doctype html>
+<html lang="ko">
+<head>
+   <title></title>
+   <!-- border 테두리 설정  boder : 크기 스타일(dotted,double,solid,dashed) 색;-->
+   <!-- margin : div 사이사이 외부간격 , padding : idv 사이 내부 간격-->
+   <!-- id는 중복이 안되지면 id처럼쓰는 클래스는 중복 허용 class = "변수명", 스타일에 사용할땐 .변수명{} -->
+   <!-- div 선언하고 클래스들이 div가 선언한 값을 사용 안하면 그대로 참조, 만약 새로 선언하면 기존 div 선언값 인식 X -->
+   <style>
+
+   div{
+      border : 2px dotted pink;
+      margin : 5px;
+      padding : 15px;
+      pont-size: 3em;
+      box-sizing : border-box; /*border-box :크기가 유동적 content-box : 내용*/
+      }
+   .aa{
+      width : 80%;     /*clac는 (A% - B%), 웹창의 크기에따라 같이 크기도 줄어든다  */
+      height : 500px;
+      }
+   .bb{
+      width : calc(25% - 2%);
+      height : 350px;
+      float : left;
+      }
+   .cc{
+      width : calc(65% - 2%);
+      height : 350px;
+      float : right;
+      overflow : auto;
+      }
+      h1{
+         background-color : cyan;
+         text-align : center;       /* text-align 는 글자 위치 */
+      }
+   body{
+      min-width : 1000px;          /* 최소 크기를 주어 깨지지 않게 함*/
+      }
+   img{
+      width : calc(100% - 1%);
+      height : 100%;               /* img는 div bb에 있으니 저렇게 설정*/
+      }
+   </style>
+</head>
+   <body>
+
+   <!-- id는 중복이 안되지면 id처럼쓰는 클래스는 중복 허용 class = "변수명", 스타일에 사용할땐 .변수명{} -->
+   <div class ="aa">
+      <h1>매&nbsp;&nbsp;화</h1>
+      <div class = "bb">
+         <img src="images/배경2.jpg">
+      </div>
+      <div class = "cc">
+      <sup>ⓐ학명은</sup> Prunus mume S. et Z.이다. <b>높이</b>는 5m 정도 자라고, <i>가지는 초록색</i>이며 잔털이 돋는 것도 있다.
+      잎은 어긋나고 난형 또는 넓은 난형으로 끝이 뾰족하고 가장자리에 예리한 잔 톱니가 있다. 꽃은 4월에 잎보다 먼저 피며,
+      연한 홍색이 도는 흰빛으로 향기가 강하다. <span>꽃잎은 다섯 개인 것이 기본형이지만 그 이상인 것도 있다.</span>
+      <br>
+      열매는 살구 비슷하게 생기고 녹색이며 털로 덮였으나, 7월이 되면 황색으로 되고 매우 시다. 홍색으로 익기 전에 따서
+      <strong>소금에 절였다가</strong> 햇볕에 말린 것은 <sub>ⓑ백매(白梅)</sub>, <em>소금에 절이지 않고</em> 볏짚을 태워 연기를 쐬면서 말린 것은 오매(烏梅)라
+      하여 <mark>약용하였다.</mark>
+      </div>
+   </div>
+
+   <div class = "aa">
+      <h1>벚&nbsp;&nbsp;꽃</h1>
+      <div class = "bb">
+      <img src="images/매화1.jpg">
+      </div>
+      <div class = "cc">
+      연분홍빛~연분홍빛이 살짝 감도는 흰색의, 길쭉한 하트 비슷한 모양의 꽃잎 5장이 방사형으로 나고 붉은 수술대 여러 개가 꽃 중심에 모여있다.<br>
+   꽃 한 송이의 크기는 손톱 한 마디 수준으로 작은 편이지만, 꽃가지가 무리지어서 나는 특성 탓에 적어도 5~6송이 이상이 한 곳에 모여서 <br>
+   피는지라 화려한 모양새가 된다. 그리고 작은 꽃이 한 나무에 매우 많이 피는지라 꽃을 많이 피운 벚나무의 경우 멀리서 보면 연분홍색의
+   눈송이들이 가지에 매달린듯한 광경을 연출하기도(...) 조금만 바람이 불어도 우&nbsp;&nbsp;&nbsp;&nbsp;수&nbsp;&nbsp;&nbsp;&nbsp;수 떨어진다.
+      </div>
+   </div>
+   </body>
+</html>
