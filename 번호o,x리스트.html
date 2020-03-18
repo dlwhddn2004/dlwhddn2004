@@ -1,58 +1,93 @@
 <!doctype html>
-<html lang ="kr">
+<html lang="ko">
    <head>
-   <meta charset "utf-8">
-   <style>
-   img{
-      width : 100px;
-      height : 100px;
-   }
-   div{
-      border : 1px solid orange;
-      width : 200px;
-      float : left;
+      <meta charset="utf-8">
+      <title></title>
+      <style>
+      div, hr{
+        margin : 20px;
+      }
+      img{
+         width : 100px;
+         height : 100px;
+      }
+      div{
+         border : 1px solid orange;
+         width : 200px;
+         float : left;
+      }
+      hr{
+      clear : both;
+     }
+     #hol{
+      clear : both;
+     }
 
-   }
+      </style>
 
-   </style>
    </head>
+
    <body>
-   <h1>번호 없는 리스트</h1>
-   <div>
-   <ul>
-      <li><a href = "아메리카노.html">아메리카노</a></li>
-      <li><a href = "카페라떼.html">카페라떼</a></li>
-      <li><a href = "카푸치노.html">카푸치노</a></li>
-   </ul>
-   </div>
+      <h1>번호없는 리스트 </h1>
+      <div>
+         <ul>
+            <li>아메리카노</li>
+            <li>카페라떼</li>
+            <li>카푸치노</li>
+         </ul>
+      </div>
 
-   <h1>번호 있는 리스트</h1>
-   <div>
-   <ol>
-      <li>아메리카노</li>
-      <li>카페라테</li>
-      <li>카푸치노</li>
-   </ol>
-   </div>
+      <div>
+         <ul>
+            <li><a href = "아메리카노.html" target="_blank">아메리카노</a></li>
+            <li><a href = "카페라떼.html" targaet= "_blank">카페라떼</a></li>
+            <li><a href = "카푸치노.html">카푸치노</a></li>
+         </ul>
+      </div>
 
-   <hr>
+      <div >
+        <ul>
+          <li>
+            <ol>
+              <!--없는 리스트 속에 번호 있는 리스트 번호 추가-->
+              <li>봄번호</li>
+              <li>여름</li>
+              <li>가을</li>
+            </ol>
+          </li>
+        </ul>
+          <ul>
+            <li>
+              <ol>
+                <li>매화</li>
+                <li>복수초</li>
+                <li>산수유</li>
+              </ol>
+            </li>
+          </ul>
+      </div>
 
-   <div class = 'c'>
-   <ul>
-      <li><img src="커피.jpeg"></li>
-      <li><img src="카페오레.jpeg"></li>
-      <li><img src="카푸치노.jpeg"></li>
-   </ul>
-   </div>
 
-   <div class = 'd'>
-   <ul>
-      <li><a href = "아메리카노.html"><img src="아메리카노.jpeg"></a></li>
-      <li><a href = "카페오레.html"><img src="카페오레.jpeg"></a></li>
-      <li><a href = "카푸치노.html"><img src="카푸치노.jpeg"></a></li>
-   </ul>
-   </div>
+      <div>
+         <ul>
+             <li><img src="아메리카노.jpeg"> </li>
+             <li><img src="카페오레.jpeg"></li>
+             <li><img src="카푸치노.jpeg"></li>
+         </ul>
+      </div>
 
-
+      <div>
+         <ul>
+            <li><a href = "아메리카노.html"><img src="아메리카노.jpeg"></a></li>
+            <li><a href = "카페라떼.html"><img src="카페오레.jpeg"></a></li>
+            <li><a href = "카푸치노.html"><img src="카푸치노.jpeg"></a></li>
+         </ul>
+      </div>
+      <h1 id = "hol">번호 있는 리스트</h1>
+      <ol>
+         <li>아메리카노</li>
+         <li>카페라떼</li>
+         <li>카푸치노</li>
+      </ol>
    </body>
 </html>
